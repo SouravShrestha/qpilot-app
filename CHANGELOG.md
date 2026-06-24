@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0 (2026-06-24)
+
+
+### Features
+
+* Initial commit ([0687369](https://github.com/SouravShrestha/qpilot-app/commit/06873690d04825063ca6bdc386fafe00a1251582))
+* Initial commit ([d7fe285](https://github.com/SouravShrestha/qpilot-app/commit/d7fe2851ddefa18d92cab0a1d9a2a651eec8c91a))
+
 ## [1.1.1](https://github.com/SouravShrestha/qpilot-quest-builder/compare/v1.1.0...v1.1.1) (2026-06-23)
 
 
