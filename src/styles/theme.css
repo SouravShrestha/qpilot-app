@@ -1,0 +1,125 @@
+/*
+ * ─── DESIGN TOKENS ──────────────────────────────────────────────────────────
+ *
+ * Edit colors here. All values use hex.
+ *
+ * Quick-edit targets:
+ *   --send-btn        → the send/generate button background color
+ *   --background      → page background
+ *   --foreground      → primary text
+ *   --card            → card/panel backgrounds
+ *   --border          → dividers and outlines
+ *   --muted-foreground → secondary/placeholder text
+ *   --radius          → base border-radius (all radii scale from this)
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --font-sans: "Lato", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-uber: "UberMove", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-send-btn: var(--send-btn);
+  --color-send-btn-foreground: var(--send-btn-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-hover: var(--sidebar-hover);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-code-bg: var(--code-bg);
+  --color-code-border: var(--code-border);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --card: #f4f4f5;
+  --card-foreground: #0a0a0a;
+  --popover: #f4f4f5;
+  --popover-foreground: #0a0a0a;
+  --primary: #0a0a0a;
+  --primary-foreground: #f5f5f5;
+  --secondary: #e4e4e7;
+  --secondary-foreground: #0a0a0a;
+  --muted: #e4e4e7;
+  --muted-foreground: #71717a;
+  --accent: #00000030;
+  --accent-foreground: #0a0a0a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #00000030;
+  --input: #f4f4f5;
+  --ring: #a1a1aa;
+
+  --send-btn: #000000;
+  --send-btn-foreground: #ffffff;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0a0a0a;
+  --sidebar-hover: #f4f4f5;
+  --sidebar-border: #00000030;
+
+  --code-bg: #f4f4f5;
+  --code-border: #00000030;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #f5f5f5;
+  --card: #212121;
+  --card-foreground: #f5f5f5;
+  --popover: #212121;
+  --popover-foreground: #f5f5f5;
+  --primary: #f5f5f5;
+  --primary-foreground: #111114;
+  --secondary: #1e1f22;
+  --secondary-foreground: #f5f5f5;
+  --muted: #1c1d20;
+  --muted-foreground: #8d8f95;
+  --accent: #232427;
+  --accent-foreground: #f5f5f5;
+  --destructive: #e6424c;
+  --destructive-foreground: #fcfcfc;
+  --border: #ffffff1a;
+  --input: #ffffff1a;
+  --ring: #6d717e;
+
+  /* ↓ Change this to set the send button accent color (dark mode) */
+  --send-btn: #FFFFFF;
+  --send-btn-foreground: #000000;
+
+  --sidebar: #000000;
+  --sidebar-foreground: #f5f5f5;
+  --sidebar-hover: #ffffff20;
+  --sidebar-border: #ffffff1a;
+
+  --code-bg: #0e0f12;
+  --code-border: #ffffff1a;
+}
